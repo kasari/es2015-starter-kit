@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kasari/es2015-starter-kit/issues"
   },
-  "homepage": "https://github.com/kasari/es2015-starter-kit#readme"
+  "homepage": "https://github.com/kasari/es2015-starter-kit#readme",
+  "devDependencies": {
+    "webpack": "^1.14.0"
+  }
 }
