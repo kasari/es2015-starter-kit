@@ -1,7 +1,7 @@
 module.exports = {
     context: __dirname + '/src',
     entry: {
-        javascript: './script.js',
+        javascript: './js/script.js',
         html: './index.html'
     },
 
@@ -31,5 +31,9 @@ module.exports = {
                 loader: 'file?name=[path][name].[ext]'
             }
         ]
+    },
+
+    resolve: {
+        extensions: ['', '.js']
     }
 };
