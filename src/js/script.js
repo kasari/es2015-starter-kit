@@ -30,9 +30,8 @@ ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <Route path="clock" component={Clock}/>
-      <Route path="players" component={Players}>
-        <Route path=":playerId" component={Player}/>
-      </Route>
+      <Route path="players" component={Players}/>
+      <Route path="players/:playerId" component={Player}/>
     </Route>
   </Router>
 ), document.getElementById('root'));

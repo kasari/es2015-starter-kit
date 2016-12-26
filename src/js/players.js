@@ -10,7 +10,6 @@ class Players extends React.Component {
           <li><Link to="/players/39">player 39</Link></li>
           <li><Link to="/players/10000">player 10000</Link></li>
         </ul>
-        {this.props.children}
       </div>
     )
   }
