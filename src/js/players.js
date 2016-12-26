@@ -11,7 +11,6 @@ class Players extends React.Component {
     fetch("http://localhost:8080/players")
       .then((response) => response.json())
       .then((json) => {
-        console.dir(json);
         this.setState({
           players: json
         });
