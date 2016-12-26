@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {Router, Route, Link, browserHistory} from 'react-router';
+import {Router, Route, Link, browserHistory, IndexRoute} from 'react-router';
 
 import Home from './home'
 import Players from './players'
@@ -18,7 +18,7 @@ class App extends React.Component {
             </ul>
           </nav>
         </header>
-        {this.props.children || <Home/>}
+        {this.props.children}
       </div>
     );
   }
@@ -27,6 +27,7 @@ class App extends React.Component {
 ReactDOM.render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
+      <IndexRoute component={Home}/>
       <Route path="players" component={Players}/>
       <Route path="players/:playerId" component={Player}/>
     </Route>
