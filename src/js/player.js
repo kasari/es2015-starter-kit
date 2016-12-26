@@ -24,12 +24,20 @@ class Player extends React.Component {
     return (
       <div>
         <h2>Player Info</h2>
-        <ul>
-          <li>ID: {this.state.id}</li>
-          <li>Name: {this.state.name}</li>
-          <li>Email: {this.state.email}</li>
-        </ul>
+        <PlayerInfo playerInfo={this.state}/>
       </div>
+    )
+  }
+}
+
+class PlayerInfo extends React.Component {
+  render() {
+    return (
+      <ul>
+        <li>ID: {this.props.playerInfo.id}</li>
+        <li>Name: {this.props.playerInfo.name}</li>
+        <li>Email: {this.props.playerInfo.email}</li>
+      </ul>
     )
   }
 }
